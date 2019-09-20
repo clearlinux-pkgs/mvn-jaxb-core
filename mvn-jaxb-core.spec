@@ -4,11 +4,12 @@
 #
 Name     : mvn-jaxb-core
 Version  : 2.2.11
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11-sources.jar
 Source0  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11-sources.jar
-Source1  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar
-Source2  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.pom
+Source1  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-bom-ext/2.2.11/jaxb-bom-ext-2.2.11.pom
+Source2  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar
+Source3  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CDDL-1.1 GPL-2.0
@@ -36,11 +37,14 @@ data components for the mvn-jaxb-core package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11-sources.jar
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-bom-ext/2.2.11
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-bom-ext/2.2.11/jaxb-bom-ext-2.2.11.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.pom
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.pom
 
 
 %files
@@ -48,6 +52,7 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-c
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-bom-ext/2.2.11/jaxb-bom-ext-2.2.11.pom
 /usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11-sources.jar
 /usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar
 /usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.pom
