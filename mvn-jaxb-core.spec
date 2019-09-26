@@ -4,7 +4,7 @@
 #
 Name     : mvn-jaxb-core
 Version  : 2.2.11
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11-sources.jar
 Source0  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11-sources.jar
 Source1  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-bom-ext/2.2.11/jaxb-bom-ext-2.2.11.pom
